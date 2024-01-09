@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+ 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.todo-app {
+  background: rgba(245, 215, 230, 0.43);
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(253, 134, 207, 0.914); 
+  position: relative;
+  top: 100px;
+  
+}
+  
+
+.dashboard {
+  background-color: rgba(180, 233, 246, 0.815);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.form-add-todo, .todo-edit-form {
+  background-color: rgba(241, 186, 218, 0.878);
+  padding: 8px 8px;
+  display: flex;
+  gap: 2px;
+}
+
+.form-add-todo > input, .todo-edit-form > [type=text]{
+  flex-grow : 8;
+  font-size: large;
+  padding: 4px 8px;
+}
+
+.form-add-todo > button {
+  flex-grow : 2;
+}
+
+.todo-container {
+  /* border: 1px dashed lime; */
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.todo-item {
+  background-color: rgba(110, 245, 245, 0.867);
+  padding: 4px 8px;
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+}
+
+.todo-item p{
+  background-color: darksalmon;
+  width: 80%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.todo-item .btn-group {
+  display: flex;
+  gap: 4px;
+}
+
+.todo-item .btn-group a {
+  border: 1px solid rgba(239, 75, 181, 0.952);
+  padding: 2px 4px;
+  cursor: pointer;
+}
+
+.job-done {
+  text-decoration: line-through;
+  color: silver;
+}
+body{
+  background-image: url('https://i.pinimg.com/originals/8c/19/8b/8c198b4daf10ee93a868183f9051dc47.gif'); 
+  background-size: cover; 
+  background-position: center;
+  font-family: 'Arial', sans-serif; 
+   
+}
